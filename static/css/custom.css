@@ -1,0 +1,14 @@
+.icon-codingame {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  background-image: url('/images/codingame.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+/* Optional: allow recoloring if SVG uses currentColor */
+.icon-codingame svg, .icon-codingame path {
+  fill: currentColor;
+}

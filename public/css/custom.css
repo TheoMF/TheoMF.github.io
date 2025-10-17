@@ -1,0 +1,27 @@
+.icon-codingame {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  background-image: url('/images/codingame.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: upper-middle;
+}
+
+/* Optional: allow recoloring if SVG uses currentColor */
+.icon-codingame svg, .icon-codingame path {
+  fill: currentColor;
+}
+
+/* Avatar size override - change these values to fit your design */
+.avatar img {
+  width: 13rem; /* desktop size (change as needed, ex: 6rem, 120px, etc.) */
+  height: auto;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  .avatar img {
+    width: 6rem; /* mobile fallback */
+  }
+}

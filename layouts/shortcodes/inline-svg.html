@@ -1,0 +1,28 @@
+{{/*
+Shortcode: inline-svg
+Usage: {{< inline-svg file="media/codingame.svg" class="icon" aria="Logo Codingame" >}}
+It first tries resources.Get (assets/) to allow Hugo Pipes processing, then falls back to reading from /static.
+*/}}
+{{ $file := .Get "file" }}
+{{ if not $file }}
+  {{ errorf "inline-svg shortcode requires a 'file' parameter" }}
+{{ end }}
+
+{{ $class := .Get "class" }}
+{{ $aria := .Get "aria" }}
+
+{{/* Try assets (resources) first */}}
+{{ with resources.Get $file }}
+  {{ $content := .Content | safeHTML }}
+  <span{{ if $class }} class="{{ $class }}"{{ end }}{{ if $aria }} role="img" aria-label="{{ $aria }}"{{ end }}>{{ $content }}</span>
+{{ else }}
+  {{/* Fallback to static files under /static; construct absolute path to project root */}}
+  {{ $staticPath := printf "%s/%s" "." $file }}
+  {{/* Try to read from the filesystem by using readFile (available in Hugo) */}}
+  {{ $raw := readFile (path.Join "static" $file) }}
+  {{ if $raw }}
+    <span{{ if $class }} class="{{ $class }}"{{ end }}{{ if $aria }} role="img" aria-label="{{ $aria }}"{{ end }}>{{ $raw | safeHTML }}</span>
+  {{ else }}
+    {{ errorf "inline-svg: could not find '%s' in assets or static" $file }}
+  {{ end }}
+{{ end }}

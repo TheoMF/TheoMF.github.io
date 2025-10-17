@@ -1,0 +1,75 @@
+baseurl = "http://www.example.com"
+title = "Home"
+theme = "hugo-coder"
+languagecode = "en"
+defaultcontentlanguage = "en"
+
+
+[pagination]
+pagerSize = 20
+
+[services]
+[services.disqus]
+shortname = "yourdiscussshortname"
+
+[markup.highlight]
+style = "github-dark"
+
+[params]
+  author = "Théo Martinez"
+  info = "Ingénieur en Robotique"
+  description = "John Doe's personal website"
+  keywords = "blog,developer,personal"
+  avatarurl = "images/avatar.png"
+  #gravatar = "john.doe@example.com"
+
+  faviconSVG = "/img/favicon.svg"
+  favicon_32 = "/img/favicon-32x32.png"
+  favicon_16 = "/img/favicon-16x16.png"
+
+  since = 2019
+
+  enableTwemoji = true
+
+  colorScheme = "auto"
+  hidecolorschemetoggle = false
+
+  # Add custom CSS (site-level) — the file is at static/css/custom.css
+  customCSS = ["css/custom.css"]
+  # customSCSS = ["scss/custom.scss"]
+  # customJS = ["js/custom.js"]
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
+
+# Social links
+[[params.social]]
+  name = "Github"
+  icon = "fa-brands fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/TheoMF"
+[[params.social]]
+  name = "Linkedin"
+  icon = "fa-brands fa-linkedin fa-2x"
+  weight = 2
+  url = "https://linkedin.com/in/théo-martinez-38b715198/"
+[[params.social]]
+  name = "Codingame"
+  icon = "icon-codingame"
+  weight = 3
+  url = "https://www.codingame.com/profile/96e55fec026ca228f3237fd0e8e046899270025"
+
+# Menu links
+[[menu.main]]
+name = "Projects"
+weight = 3
+url = "projects/"
+[[menu.main]]
+  name = "About"
+  weight = 3
+  url = "about/"
+
+
