@@ -21,10 +21,9 @@ style = "github-dark"
 [params]
   author = "Théo Martinez"
   info = "Ingénieur en Robotique"
-  description = "John Doe's personal website"
+  description = "Théo Martinez's personal website"
   keywords = "blog,developer,personal"
   avatarurl = "images/avatar.png"
-  #gravatar = "john.doe@example.com"
 
   faviconSVG = "/img/favicon.svg"
   favicon_32 = "/img/favicon-32x32.png"
@@ -39,8 +38,6 @@ style = "github-dark"
 
   # Add custom CSS (site-level) — the file is at static/css/custom.css
   customCSS = ["css/custom.css"]
-  # customSCSS = ["scss/custom.scss"]
-  # customJS = ["js/custom.js"]
 
 [taxonomies]
   category = "categories"
