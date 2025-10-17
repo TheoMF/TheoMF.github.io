@@ -15,7 +15,7 @@
 
 /* Avatar size override - change these values to fit your design */
 .avatar img {
-  width: 8rem; /* desktop size (change as needed, ex: 6rem, 120px, etc.) */
+  width: 12rem; /* desktop size (change as needed, ex: 6rem, 120px, etc.) */
   height: auto;
   border-radius: 50%;
 }
@@ -24,4 +24,67 @@
   .avatar img {
     width: 6rem; /* mobile fallback */
   }
+}
+
+/* Home page injected sections styling */
+.about-page, .projects-page {
+  margin-top: 2rem;
+  margin-bottom: 0rem;
+}
+
+.about-page h1, .projects-page h1 {
+  margin-bottom: 0rem;
+}
+
+/* Force vertical stacking for injected sections */
+.container.about-page, .container.projects-page, .about-page, .projects-page {
+  display: block !important;
+  width: 100% !important;
+  clear: both;
+}
+
+/* If parent .content uses flex, force injected sections to take full row */
+.content > .container.about-page,
+.content > .container.projects-page,
+.content > .about-page,
+.content > .projects-page {
+  -webkit-box-flex: 0 !important;
+  -ms-flex: 0 0 100% !important;
+  flex: 0 0 100% !important;
+  max-width: 50% !important;
+}
+
+/* Also force the original home 'centered' container to occupy its own row */
+.content > .container.centered {
+  -webkit-box-flex: 0 !important;
+  -ms-flex: 0 0 100% !important;
+  flex: 0 0 100% !important;
+  max-width: 100% !important;
+}
+
+/* Allow children to wrap to new lines inside the flex container */
+.content {
+  flex-wrap: wrap !important;
+  /* Force vertical layout on homepage so injected sections appear stacked */
+  flex-direction: column !important;
+}
+
+/* Safety: ensure children use border-box and clear floats */
+.content > * {
+  box-sizing: border-box !important;
+  clear: both;
+}
+
+/* If any inner element uses float, make sure the injected sections start on a new line */
+.content > .container.centered::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Avoid inherited flex on the parent .centered .about */
+.centered > .about + .about-page,
+.centered > .about + .projects-page,
+.about-page + .projects-page {
+  margin-top: 2rem;
 }

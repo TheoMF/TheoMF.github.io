@@ -1,3 +1,5 @@
+# Projets
+
 ### Tri sélectif avec des robots open source
 
 Je travaille actuellement sur un projet personnel pour réaliser un tri sélectif avec les robots de Hugging Face SO-101 et le kiwi.
