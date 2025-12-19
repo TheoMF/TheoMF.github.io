@@ -1,15 +1,17 @@
-# Projets
+# Projects
 
-### Tri sélectif avec des robots open source
+### Selective waste sorting with open-source robots 
 
-Je travaille actuellement sur un projet personnel pour réaliser un tri sélectif avec les robots de Hugging Face SO-101 et le kiwi.
+I'm currently working on a personal project to perform selective waste sorting with either a manipulator arm (SO-101) or a mobile robot (Le Kiwi).
 
 ![](/images/SO-101_pick_and_place.gif)
 
 [Github](https://github.com/TheoMF/sorting_bot) | [video](https://youtu.be/Cu2WPRdQeTQ?si=bpx38sxi5kr4ihlz)
 
-### Contrôle Optimal (MPC) sur le robot Panda
+### Optimal control (MPC) on robot Franka Emika Panda
 
-Lors de mon expérience dans l'équipe Gepetto, j'ai développé au sein d'une équipe une librairie de contrôle optimal. Le but était de pouvoir réaliser un suivi de trajectoire, tout en faisant de l'évitement d'obstacles, de l'asservissement visuel ou bien du contrôle de force. Plusieurs vidéos de démonstrations sont disponibles.
+During my time at LAAS-CNRS, I developed in a team of 7 engineers and PhD students a library for optimal control. We tuned and experimentally validated the library controller for several demos that involved trajectory tracking, collision avoidance, and visual servoing.
+
+Different videos of these demos are available.
 
 [Github](https://github.com/agimus-project/agimus_controller) | [video1](https://peertube.laas.fr/w/6hnN96zyP7ADvGvyop3hfw) | [video2](https://peertube.laas.fr/w/p/7xYdnDaQujxmgtBJpSsd2s?playlistPosition=2&resume=true) 

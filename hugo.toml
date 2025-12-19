@@ -20,7 +20,7 @@ style = "github-dark"
 
 [params]
   author = "Théo Martinez"
-  info = "Ingénieur en Robotique"
+  info = "Robotics Engineer"
   description = "Théo Martinez's personal website"
   keywords = "blog,developer,personal"
   avatarurl = "images/avatar.png"
