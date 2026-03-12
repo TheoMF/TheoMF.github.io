@@ -2,11 +2,11 @@
 
 ### Selective waste sorting with open-source robots 
 
-I'm currently working on a personal project to perform selective waste sorting with either a manipulator arm (SO-101) or a mobile robot (Le Kiwi).
+I recently finished a personal project to perform selective waste sorting with either a manipulator arm (SO-101) or a mobile manipulator (Le Kiwi).
 
 ![](/images/SO-101_pick_and_place.gif)
 
-[Github](https://github.com/TheoMF/sorting_bot) | [video](https://youtu.be/Cu2WPRdQeTQ?si=bpx38sxi5kr4ihlz)
+[Github](https://github.com/TheoMF/sorting_bot) | [mobile manipulator video](https://www.youtube.com/watch?v=8z1jm2o3kwE&t) | [manipulator arm video](https://youtu.be/Cu2WPRdQeTQ?si=bpx38sxi5kr4ihlz)
 
 ### Optimal control (MPC) on robot Franka Emika Panda
 
